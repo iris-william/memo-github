@@ -1,4 +1,4 @@
-# MEMO GITHUB <img src="https://raw.githubusercontent.com/iris-william/memo-github/c57254b985ede98da25b5a9e1a9efcc3900bfe9d/assets/flags/france.svg" width="60" alt="French Flag">
+# MEMO GITHUB <img src="https://raw.githubusercontent.com/iris-william/memo-github/c57254b985ede98da25b5a9e1a9efcc3900bfe9d/assets/flags/france.svg" height="12" alt="French Flag">
 **Basic GitHub commands and workflow for beginner (commandes de base pour les débutants sur GitHub)**
 <hr>
 
