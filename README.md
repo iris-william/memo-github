@@ -6,8 +6,8 @@
 - Avoir un compte GitHub
 - Git installé sur la machine
 - Identifiants initialisés en global 
-  - `git config user.name "Ton Nom"`
-  - `git config user.email "ton@email.com"` 
+  - `git config --global user.name "Ton Nom"`
+  - `git config --global user.email "ton@email.com"` 
 
 ## xxx
 
