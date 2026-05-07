@@ -1,24 +1,28 @@
 # MEMO GITHUB <img src="https://raw.githubusercontent.com/iris-william/memo-github/fc2926fc9cb490c4a5b78e2adfcaaa6d8f5f4430/assets/flags/uk.svg" height="24" alt="UK Flag">
 **Basic GitHub commands and workflow for beginner**
-<hr>
 
-## Prérequis
-- Avoir un compte GitHub
-- Git installé sur la machine
-- Identifiants initialisés en global 
-  - `git config --global user.name "Ton Nom"`
-  - `git config --global user.email "ton@email.com"` 
-
-## xxx
-
-### yyy
+<p align="right">
+  <a href="lang/readme-en.md"><img src="https://raw.githubusercontent.com/iris-william/memo-github/fc2926fc9cb490c4a5b78e2adfcaaa6d8f5f4430/assets/flags/uk.svg" height="12" alt="UK Flag"> English</a> |
+  <a href="lang/readme-fr.md"><img src="https://raw.githubusercontent.com/iris-william/memo-github/c57254b985ede98da25b5a9e1a9efcc3900bfe9d/assets/flags/france.svg" height="12" alt="UK Flag"> Français</a>
+</p>
 
 
-## Modifier un projet jamais importé
-- 1️⃣ Importer le projet avec `git clone` 
-- 2️⃣
-- 3️⃣
-- 4️⃣
 
+<table width="100%">
+<tr>
+<td align="left">
+du texte
+</td>
+<td align="right">
+  <a href="lang/readme-en.md"><img src="https://raw.githubusercontent.com/iris-william/memo-github/fc2926fc9cb490c4a5b78e2adfcaaa6d8f5f4430/assets/flags/uk.svg" height="12" alt="UK Flag"> English</a> |
+  <a href="lang/readme-fr.md"><img src="https://raw.githubusercontent.com/iris-william/memo-github/c57254b985ede98da25b5a9e1a9efcc3900bfe9d/assets/flags/france.svg" height="12" alt="UK Flag"> Français</a>
+</td>
+</tr>
+</table>
 
-## Modifier un projet déjà importé
+<p>
+<span>du texte</span>
+<span align="right">
+🇬🇧 English | 🇫🇷 Français
+</span>
+</p>
