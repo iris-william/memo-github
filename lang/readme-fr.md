@@ -47,8 +47,14 @@ git config --global user.email "username@domain.tld"
 
 ## Valider une branche (Merge)
 
+## Poursuivre les travaux sur une branche après un merge
+
 ## Supprimer une branche
 
+
+---
+---
+---
 ## Clone du projet
 
 ```bash
