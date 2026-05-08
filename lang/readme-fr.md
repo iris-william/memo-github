@@ -12,8 +12,15 @@
 ### Vérifier son installation git
 ```bash
 Avec la console Windows (cmd) ou PowerShell :
-git --version : renvoie la version de git<br/>
-where git : Renvoie l'emplacement de l'éxécutable accessible
+git --version : renvoie la version de git
+where git : renvoie l'emplacement de l'exécutable accessible
+
+Si besoin d'ajouter git au path :
+1) Menu Démarrer → “Variables d’environnement”
+2) “Modifier les variables d’environnement système”
+3) Variables d’environnement
+4) Dans Path → Modifier
+5) Ajouter `C:\Program Files\Git\cmd` (ou le chemin renvoyé par `where git`)
 ```
 ### Initialliser ses identifiants pour pouvoir synchroniser les travaux
 ```bash
