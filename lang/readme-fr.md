@@ -29,3 +29,288 @@ git config --global user.email "username@domain.tld"
 
 
 ## Modifier un projet déjà importé
+---
+---
+---
+# Workflow Git simple — 2 PC + GitHub
+
+## Clone du projet
+
+```bash
+git clone URL_DU_PROJET
+cd NOM_DU_PROJET
+```
+
+---
+
+# Récupérer une branche distante (UNE SEULE FOIS par PC et par branche)
+
+Exemple avec `ma_branche` :
+
+```bash
+git fetch
+git switch -c ma_branche --track origin/ma_branche
+```
+
+Après ça, la branche existe localement.
+
+Tu ne refais plus cette commande pour cette branche.
+
+---
+
+# Vérifier les branches
+
+## Branches locales
+
+```bash
+git branch
+```
+
+## Toutes les branches (locales + distantes)
+
+```bash
+git branch -a
+```
+
+---
+
+# Workflow quotidien
+
+## Avant de travailler (quand on change de PC)
+
+```bash
+git switch ma_branche
+git pull
+```
+
+---
+
+## Travailler puis sauvegarder sur GitHub
+
+```bash
+git add .
+git commit -m "Mon message"
+git push
+```
+
+---
+
+# Workflow typique entre 2 PC
+
+```text
+PC A :
+pull → travail → commit → push
+
+PC B :
+pull → travail → commit → push
+
+PC A :
+pull → travail → commit → push
+```
+
+IMPORTANT :
+Toujours faire un `git pull` avant de recommencer à travailler sur un autre PC.
+
+---
+
+# Créer une nouvelle branche
+
+Depuis `main` :
+
+```bash
+git switch main
+git pull
+git switch -c nouvelle_branche
+```
+
+Puis premier push :
+
+```bash
+git push -u origin nouvelle_branche
+```
+
+---
+
+# Merge d'une branche terminée
+
+## Revenir sur main
+
+```bash
+git switch main
+git pull
+```
+
+## Merge
+
+```bash
+git merge ma_branche
+```
+
+## Push
+
+```bash
+git push
+```
+
+---
+
+# Supprimer une branche après merge
+
+## Supprimer localement
+
+```bash
+git branch -d ma_branche
+```
+
+## Supprimer sur GitHub
+
+```bash
+git push origin --delete ma_branche
+```
+
+---
+
+# Nettoyer les branches supprimées sur un autre PC
+
+```bash
+git fetch --prune
+```
+
+---
+
+# Voir l'historique des commits
+
+```bash
+git log --oneline
+```
+
+Exemple :
+
+```text
+a1b2c3d Correction bug
+e4f5g6h Ajout formulaire
+i7j8k9l Version stable
+```
+
+---
+
+# Revenir à un ancien commit (NON pushé)
+
+ATTENTION :
+Cette commande supprime les commits après le commit ciblé.
+
+```bash
+git reset --hard ID_DU_COMMIT
+```
+
+Exemple :
+
+```bash
+git reset --hard i7j8k9l
+```
+
+---
+
+# Annuler un commit déjà pushé (SAFE)
+
+```bash
+git revert ID_DU_COMMIT
+git push
+```
+
+Ça crée un nouveau commit qui annule l’ancien.
+
+---
+
+# Annuler un merge (SAFE)
+
+## Trouver le commit de merge
+
+```bash
+git log --oneline
+```
+
+Exemple :
+
+```text
+f9e8d7c Merge branch 'ma_branche'
+```
+
+## Annuler le merge
+
+```bash
+git revert -m 1 f9e8d7c
+git push
+```
+
+---
+
+# Revenir temporairement à un ancien état
+
+```bash
+git switch --detach ID_DU_COMMIT
+```
+
+Revenir ensuite sur la branche :
+
+```bash
+git switch ma_branche
+```
+
+---
+
+# Sauvegarde rapide avant manipulation risquée
+
+```bash
+git branch sauvegarde_temp
+```
+
+---
+
+# Commandes modernes
+
+Git moderne recommande :
+
+## Changer de branche
+
+```bash
+git switch ma_branche
+```
+
+## Créer une branche
+
+```bash
+git switch -c ma_branche
+```
+
+## Restaurer un fichier
+
+```bash
+git restore fichier.txt
+```
+
+Ancienne commande encore valide :
+
+```bash
+git checkout
+```
+
+mais `switch` et `restore` sont plus clairs.
+
+---
+
+# Rappel ultra simple
+
+## Quand tu commences à travailler
+
+```bash
+git pull
+```
+
+## Quand tu finis
+
+```bash
+git add .
+git commit -m "message"
+git push
+```
