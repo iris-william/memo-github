@@ -32,7 +32,21 @@ git config --global user.email "username@domain.tld"
 ---
 ---
 ---
-# Workflow Git simple — 2 PC + GitHub
+# MÉMO GITHUB - GIT POUR LES NULS - TUTO FRANÇAIS
+
+## Pré requis
+
+## Commandes de base
+
+## Travailler sur une nouvelle branche ()
+
+## Renvoyer la branche sur GitHub (push)
+
+## Reprendre une branche sur un autre PC (ou reprendre une branche jamais importée)
+
+## Valider une branche (Merge)
+
+## Supprimer une branche
 
 ## Clone du projet
 
