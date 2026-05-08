@@ -1,15 +1,20 @@
-# MEMO GITHUB EN FRANÇAIS <img src="https://raw.githubusercontent.com/iris-william/memo-github/c57254b985ede98da25b5a9e1a9efcc3900bfe9d/assets/flags/france.svg" height="24" alt="French Flag">
+# <img src="https://raw.githubusercontent.com/iris-william/memo-github/c57254b985ede98da25b5a9e1a9efcc3900bfe9d/assets/flags/france.svg" height="24" alt="French Flag"> MEMO GITHUB EN FRANÇAIS
 **Commandes de base pour les débutants sur GitHub**
 <hr>
 
 ## Prérequis
 - Avoir un compte GitHub
-- Git installé sur la machine
+- Git installé et accessible (path) sur la machine
 - Identifiants initialisés en global 
   - `git config --global user.name "Ton Nom"`
   - `git config --global user.email "ton@email.com"`  
 
-
+### Vérifier son installation git
+```bash
+Avec la console Windows (cmd) ou PowerShell :
+git --version : renvoie la version de git<br/>
+where git : Renvoie l'emplacement de l'éxécutable accessible
+```
 ### Initialliser ses identifiants pour pouvoir synchroniser les travaux
 ```bash
 git config --global user.name "your_name"
