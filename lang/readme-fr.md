@@ -33,7 +33,7 @@ git config --global user.email "username@domain.tld"
 ---
 ---
 # MÉMO GITHUB - GIT POUR LES NULS - TUTO FRANÇAIS
-<div align="center"><img source ="./assets/images/carto_mentale.png" alt="carto mentale GitHub"></img></div>
+<div align="center"><img src="../assets/Images/carto_mentale.png" alt="carto mentale GitHub"></img></div>
 
 ## Pré requis
 
