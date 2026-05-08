@@ -7,7 +7,14 @@
 - Git installé sur la machine
 - Identifiants initialisés en global 
   - `git config --global user.name "Ton Nom"`
-  - `git config --global user.email "ton@email.com"` 
+  - `git config --global user.email "ton@email.com"`  
+
+
+### Initialliser ses identifiants pour pouvoir synchroniser les travaux
+```bash
+git config --global user.name "your_name"
+git config --global user.email "username@domain.tld"
+```
 
 ## xxx
 
