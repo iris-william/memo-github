@@ -52,22 +52,69 @@ git config --global user.email "username@domain.tld"
 
 ## Commandes de base
 
-## Travailler sur une nouvelle branche ()
+## Travailler sur une nouvelle branche
 
 ## Renvoyer la branche sur GitHub (push)
 
 ## Reprendre une branche sur un autre PC (ou reprendre une branche jamais importée)
 
 ## Valider une branche (Merge)
+```
+1️⃣ git add .
+2️⃣ git commit -m "Merging..."
+3️⃣ git push
+4️⃣ git switch main
+5️⃣ git pull
+6️⃣ git merge ma_branche
+7️⃣ git push
+```
 
-## Poursuivre les travaux sur une branche après un merge
+## Poursuivre les travaux sur le même PC après un merge
+```
+1️⃣ git switch ma_branche
+2️⃣ git merge main
+✔️ Le workflow est prêt pour la suite
+```
+
+## Poursuivre les travaux sur un autre PC après un merge
+```
+1️⃣ git switch main
+2️⃣ git pull
+3️⃣ git switch ma_branche
+4️⃣ git pull
+5️⃣ git merge main
+✔️ Le workflow est prêt pour la suite
+```
 
 ## Supprimer une branche
+```
+# Sortir de la branche à supprimer
+1️⃣ git switch main
+
+# Supprimer la branche locale
+2️⃣ git branch -d ma_branche
+
+# Supprimer la branche distante (GitHub)
+3️⃣ git push origin --delete ma_branche 
+```
 
 
 ---
 ---
 ---
+
+```
+1️⃣ 
+2️⃣ 
+3️⃣ 
+4️⃣ 
+5️⃣ 
+6️⃣ 
+7️⃣ 
+8️⃣ 
+9️⃣ 
+🔟 
+```
 ## Clone du projet
 
 ```bash
