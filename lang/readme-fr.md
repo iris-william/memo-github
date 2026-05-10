@@ -2,14 +2,14 @@
 **Commandes de base pour les débutants sur GitHub**
 <hr>
 
-## Prérequis
+## ✨ Prérequis
 - Avoir un compte GitHub
 - Git installé et accessible (path) sur la machine
 - Identifiants initialisés en global 
   - `git config --global user.name "Ton Nom"`
   - `git config --global user.email "ton@email.com"`  
 
-### Vérifier son installation git
+#### 👉 Vérifier son installation git
 ```
 Avec la console Windows (cmd) ou PowerShell :
 git --version : renvoie la version de git
@@ -23,7 +23,7 @@ Si besoin d'ajouter git au path :
 5) Ajouter `C:\Program Files\Git\cmd` (ou le chemin renvoyé par `where git`)
 ```
 
-### Initialliser ses identifiants pour pouvoir synchroniser les travaux
+### 👉 Initialliser ses identifiants pour pouvoir synchroniser les travaux
 ```bash
 git config --global user.name "your_name"
 git config --global user.email "username@domain.tld"
@@ -58,7 +58,9 @@ git config --global user.email "username@domain.tld"
 
 ## Reprendre une branche sur un autre PC (ou reprendre une branche jamais importée)
 
-## Valider une branche (Merge)
+## Procédure de merging (how to merge)
+
+### Valider une branche (Merge)
 ```
 1️⃣ git add .
 2️⃣ git commit -m "Merging..."
@@ -69,14 +71,14 @@ git config --global user.email "username@domain.tld"
 7️⃣ git push
 ```
 
-## Poursuivre les travaux sur le même PC après un merge
+### Poursuivre les travaux sur le même PC après un merge
 ```
 1️⃣ git switch ma_branche
 2️⃣ git merge main
 ✔️ Le workflow est prêt pour la suite
 ```
 
-## Poursuivre les travaux sur un autre PC après un merge
+### Poursuivre les travaux sur un autre PC après un merge
 ```
 1️⃣ git switch main
 2️⃣ git pull
@@ -86,7 +88,7 @@ git config --global user.email "username@domain.tld"
 ✔️ Le workflow est prêt pour la suite
 ```
 
-## Supprimer une branche
+### Supprimer une branche
 ```
 # Sortir de la branche à supprimer
 1️⃣ git switch main
